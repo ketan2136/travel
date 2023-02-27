@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container row">
+            <a href="#" class="logo">
+                <img src="./assets/images/Logo (2).png" alt="">
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Package
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a></li>
+                    <li><a href="#">Destination
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a></li>
+                    <li><a href="#">Blog
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="hero-data">
+                    <h1>Make in <br> your journey.</h1>
+                    <p>Explore the world with what you love beautiful <br> natural beauty.</p>
+                    <form action="#" class="search-form">
+                        <select name="Location">
+                            <option value="0">Location</option>
+                            <option value="1">jasdan</option>
+                            <option value="2">vadodra</option>
+                        </select>
+                        <select name="Date">
+                            <option value="0">data</option>
+                            <option value="1">1</option>
+                            <option value="3">2</option>
+                        </select>
+                        <select name="People">
+                            <option value="0">People</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                        <input type="submit" value="Explore now">
+                    </form>
+                    <p><span>Popular Place </span>: Bali, Istanbul, Rome, Paris.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="Explore">
+            <div class="container">
+                <div class="explore-data">
+                    <h2>Explore new worlds with <br>
+                        exotic natural scenery</h2>
+                    <p>Explore the world with what you love beautiful natural beauty.</p>
+
+                    <!-- Swiper -->
+                    <div class="swiper explore-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="./assets/images/ex1 (4).jpg" alt="">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="slider-circal">
+                                        <span>"</span>
+                                    </div>
+                                    <h4>Bali, Indonesia.</h4>
+                                    <p>Bali is a beautiful tourist spot and is visited by many traveler</p>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="./assets/images/ex1 (3).jpg" alt="">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="slider-circal">
+                                        <span>"</span>
+                                    </div>
+                                    <h4>Bali, Indonesia.</h4>
+                                    <p>Bali is a beautiful tourist spot and is visited by many traveler</p>
+                                </div>
+                                
+                            </div>
+                           
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="./assets/images/ex1 (2).jpg" alt="">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="slider-circal">
+                                        <span>"</span>
+                                    </div>
+                                    <h4>Bali, Indonesia.</h4>
+                                    <p>Bali is a beautiful tourist spot and is visited by many traveler</p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="./assets/images/ex1 (4).jpg" alt="">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="slider-circal">
+                                        <span>"</span>
+                                    </div>
+                                    <h4>Bali, Indonesia.</h4>
+                                    <p>Bali is a beautiful tourist spot and is visited by many traveler</p>
+                                </div>
+                                
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-img">
+                                    <img src="./assets/images/ex1 (4).jpg" alt="">
+                                </div>
+                                <div class="slider-text">
+                                    <div class="slider-circal">
+                                        <span>"</span>
+                                    </div>
+                                    <h4>Bali, Indonesia.</h4>
+                                    <p>Bali is a beautiful tourist spot and is visited by many traveler</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+   <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".explore-slider", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+
+</body>
+
+</html>
